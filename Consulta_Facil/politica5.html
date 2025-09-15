@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Política de Privacidade</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        :root {
+            --bg: #f4f6f8;
+            --card: #ffffff;
+            --accent: #003366;
+            --muted: #555;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: var(--bg);
+            color: #222;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Cabeçalho com transição de cor */
+        header {
+            background: linear-gradient(90deg, var(--accent), #0055aa);
+            color: white;
+            padding: 28px 16px;
+            text-align: center;
+            transition: background 0.5s ease; /* transição suave de cor */
+        }
+
+        header:hover {
+            background: linear-gradient(90deg, #0055aa, #004488); /* muda ao passar mouse */
+        }
+
+        /* Conteúdo do cabeçalho */
+        .header-content {
+            display: flex;
+            align-items: center;      
+            justify-content: center;  
+            gap: 12px;                
+        }
+
+        /* Animação de entrada da logo */
+        @keyframes logo-entrada {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Logo estilizada */
+        .logo {
+            height: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: logo-entrada 1s ease forwards; /* animação de entrada */
+        }
+
+        .logo:hover {
+            transform: scale(1.05);                    
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);  
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 18px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 20, 30, 0.06);
+            padding: 22px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.55;
+            color: var(--muted);
+            margin: 14px 0;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 14px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            padding: 18px 8px;
+            margin-top: 18px;
+        }
+
+        /* Responsividade */
+        @media (max-width:600px) {
+            header {
+                padding: 18px 10px;
+            }
+
+            main {
+                padding: 12px;
+            }
+
+            .card {
+                padding: 16px;
+            }
+
+            .header-content {
+                flex-direction: column; /* logo acima do título no mobile */
+                gap: 6px;
+            }
+
+            .logo {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo-consulta-facil.png" alt="Logo da Empresa" class="logo">
+            <h1>Política de Privacidade</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Política de Privacidade do Consulta Fácil</h2>
+
+            <p>
+                Quando você usa os nossos serviços, está confiando a nós suas informações. Entendemos que isso é uma grande
+                responsabilidade e trabalhamos duro para proteger essas informações e colocar você no controle.
+            </p>
+
+            <p>
+                Esta Política de Privacidade destina-se a ajudar você a entender quais informações coletamos, por que as
+                coletamos e como você pode atualizar, gerenciar, exportar e excluir essas informações.
+            </p>
+
+            <h3>O que coletamos</h3>
+            <p>Dependendo dos serviços que você utiliza, podemos coletar informações como dados de contato, informações
+                de pagamento, conteúdo que você cria ou armazena, dados de uso e informações de dispositivos. Essas
+                informações nos ajudam a fornecer, personalizar e melhorar os serviços.</p>
+
+            <h3>Por que coletamos</h3>
+            <p>Coletamos informações para operar e melhorar nossos serviços, fornecer suporte, segurança, recomendações
+                relevantes e para cumprir obrigações legais. Também usamos dados para oferecer experiências
+                personalizadas e anúncios mais relevantes quando aplicável.</p>
+
+            <h3>Como você controla suas informações</h3>
+            <p>Fornecemos ferramentas para que você possa visualizar, atualizar, exportar e excluir suas informações.
+                Recomendamos revisar periodicamente suas configurações de privacidade e utilizar as opções de
+                gerenciamento disponíveis em sua conta.</p>
+
+            <h3>Segurança</h3>
+            <p>Empregamos medidas técnicas e administrativas para proteger informações contra acesso não autorizado,
+                alteração e destruição. Apesar disso, nenhum método é 100% seguro — por isso incentivamos práticas
+                seguras, como uso de senhas fortes e autenticação em dois fatores.</p>
+
+            <h3>Contato</h3>
+            <p>Se tiver dúvidas sobre esta política ou sobre o tratamento de seus dados, entre em contato conosco
+                através dos canais oficiais disponibilizados pelo serviço.</p>
+
+            <p style="margin-top:18px;font-size:13px;color:#666;">
+            <!-- Nota: Este documento contém o texto principal solicitado. Ajuste conforme necessário. -->
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="ano"></span> Consulta Fácil — Política de Privacidade
+    </footer>
+
+    <script>
+        // atualiza o ano no rodapé automaticamente
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
